@@ -1,0 +1,78 @@
+% Credit: Suvasish Das
+% https://suvasish114.gitgub.io/
+
+% code section: \begin{lstlisting}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+\usepackage{amsmath}
+
+% code snippet
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=true,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=4
+}
+
+\title{Dynamic Programming}
+\author{Suvasish Das}
+\date{}
+\begin{document}
+	\maketitle
+	\section*{Introduction}
+	Dynamic Programming\cite{introduction_to_dynamic_programming} (DP) is mainly an optimization over plain recursion. Problems that have an option to choose from can be solved using DP. The idea is to store the results of subproblems so that we do not have to re-compute them when needed later. This simple optimization reduces time complexities from exponential to polynomial.\\
+	
+	To dynamically solve a problem, we need to check two necessary conditions:\\
+	
+	\textbf{1. Overlapping Subproblems:} When the solutions to the same subproblems are needed repetitively for solving the actual problem. The problem is said to have overlapping subproblems property.\\
+	
+	\textbf{2. Optimal Substructure Property:} If the optimal solution of the given problem can be obtained by using optimal solutions of its subproblems then the problem is said to have Optimal Substructure Property.
+	
+	\section*{Overlapping Subproblem}
+	
+	A problem is said to have overlapping subproblems\cite{overlapping_subproblem} if the problem can be broken down into subproblems which are reused several times OR a recursive algorithm for the problem solves the same subproblem over and over rather than always generating new subproblems.\\
+	
+	A second ingredient that an optimization problem must have for dynamic programming to apply is that the space of subproblems must be "small" in the sense that a recursive algorithm for the problem solves the same subproblems over and over, rather than always generating new subproblems (Introduction to Algorithms by CLRS)\\
+	
+	
+	‌
+	
+	
+	
+	\section*{Optimal Substructure}
+	
+	
+	
+	% citaions
+	\begin{thebibliography}{999}		
+		
+		\bibitem{introduction_to_dynamic_programming}
+		“How to solve a Dynamic Programming Problem ?,” \emph{GeeksforGeeks}, Apr. 12, 2017. https://www.geeksforgeeks.org/solve-dynamic-programming-problem/
+		
+		\bibitem{overlapping_subproblem}
+		“What are overlapping subproblems in Dynamic Programming (DP)?,”
+		\emph{Stack Overflow.} https://stackoverflow.com/questions/64499367/what-are-overlapping-subproblems-in-dynamic-programming-dp (accessed Feb. 19, 2023).
+		
+		
+		
+	\end{thebibliography}
+	
+\end{document}
