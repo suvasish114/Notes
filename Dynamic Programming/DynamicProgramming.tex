@@ -2,7 +2,8 @@
 % https://suvasish114.gitgub.io/
 
 % code section: \begin{lstlisting}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% span text: \begin{verbatim}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass{article}
 \usepackage{amsmath}
@@ -60,8 +61,31 @@
 	\section*{Optimal Substructure}
 	
 	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
+	\section{Longest Palindromic Substring}
+	
+	\subsection*{Problem Statement}
+	Given a string s, return the longest palindromic substring in s.
+	\begin{verbatim}
+	Example1: I/P = "babad" O/P = "bab"
+	Example2: I/P = "cbbd" O/P = "bb"
+	\end{verbatim}
+	
+	\subsection*{Brute Force Solution}
+	List all substring and check if it is palindromic or not. Intuitively, to check wheather a string is palindromic or not, takes $O(n)$ time complexity. And, we are iterating through the string in total $O(n^2)$ time. So, the time-complexity of the solution will be $O(n^3)$
+	
+	\subsection*{Using Recursion}
+	
+	\subsection*{Using Dynamic Programming}
+	% \cite{longest_palindromic_substring}
+	
+	\subsection*{Using Sliding Window}
+	
 	
 	% citaions
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\newpage
 	\begin{thebibliography}{999}		
 		
 		\bibitem{introduction_to_dynamic_programming}
@@ -71,6 +95,10 @@
 		“What are overlapping subproblems in Dynamic Programming (DP)?,”
 		\emph{Stack Overflow.} https://stackoverflow.com/questions/64499367/what-are-overlapping-subproblems-in-dynamic-programming-dp (accessed Feb. 19, 2023).
 		
+		\bibitem{longest_palindromic_substring}
+		“LeetCode - The World’s Leading Online Programming Learning Platform,”
+		\emph{LeetCode}
+		https://leetcode.com/problems/longest-palindromic-substring/solutions/151144/bottom-up-dp-two-pointers/ (accessed Feb. 24, 2023).
 		
 		
 	\end{thebibliography}
